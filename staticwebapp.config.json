@@ -3,19 +3,19 @@
   "routes": [
     {
       "route": "index.html*",
-      "allowedRoles": ["authenticated","administrator"]
+      "allowedRoles": ["authenticated"]
     },
     {
       "route": "Information.html*",
-      "allowedRoles": ["authenticated","administrator"]
+      "allowedRoles": ["authenticated"]
     },
     {
       "route": "Lab-Data.html*",
-      "allowedRoles": ["authenticated","administrator"]
+      "allowedRoles": ["authenticated"]
     },
     {
       "route": "Contact.html*",
-      "allowedRoles": ["authenticated","administrator"]
+      "allowedRoles": ["authenticated"]
     }
   ],
   "navigationFallback": {
@@ -25,6 +25,9 @@
   "responseOverrides": {
     "400": {
       "rewrite": "Not-Invited.html"
+    },
+    "401": {
+        "rewrite": "Not-For-You.html"
     },
     "403": {
       "rewrite": "Not-For-You.html"
