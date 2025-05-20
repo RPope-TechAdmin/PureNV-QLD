@@ -30,7 +30,7 @@
       "rewrite": "Not-Invited.html"
     },
     "401": {
-        "redirect": "/.auth/login/aad"
+        "redirect": "Index.html"
     },
     "403": {
       "rewrite": "Not-For-You.html"
