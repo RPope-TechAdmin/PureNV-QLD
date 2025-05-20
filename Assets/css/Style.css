@@ -81,15 +81,13 @@ html,body{
 }
 
 .wip{
-    display:block;
+    display:flex;
     justify-content: center;
-    align-items: center;
-    position:absolute;
-    left:35%;
+    align-self: center;
 }
 
 .wip img{
-    width:75%;
+    width:30%;
     height:auto;
 }
 
