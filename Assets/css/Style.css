@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display');
+
+html,body{
+    max-width:100%;
+    min-height:100vh;
+    margin:0;
+    padding:0;
+    font-family:'Montserrat', sans serrif;
+    background-color: #f5f8fa;
+    color:#1b96c8;
+}
+
+.header{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding:10px,20px;
+    background-color: #ffffff;
+    color:#1b96c8;
+}
+
+.logo img{
+    width:17.5%;
+    height:auto;
+}
+
+.title{
+    font-size:5vh;
+    font-weight:600;
+    position:fixed;
+    left:42.5%;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    margin:0;
+    padding:20px;
+}
+
+.nav li{
+    margin-left:20px;
+}
+
+.nav a{
+    color:#1b96c8;
+    text-decoration: none;
+    font-size: 2vh;
+    text-wrap-mode:nowrap;
+    font-weight:600;
+    transition: color 0.3s;
+}
+
+.nav a:hover{
+    color:#1b97c88c;
+}
+
+.decal img{
+    width:100%;
+    height:4vh;
+}
+
+.intro-title{
+    color:#1b96c8;
+    font-size:30px;
+    font-weight:600px;
+    text-align:center;
+}
+
+.intro{
+    color:#1b96c8;
+    font-size:20px;
+    text-align:center;
+}
+
+.wip{
+    display:block;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left:35%;
+}
+
+.wip img{
+    width:75%;
+    height:auto;
+}
+
+.footer{
+    background-color:#3d3d3d;
+    width:100%;
+    height:8vh;
+    padding-left:2%;
+    }
+
+.foot-text{
+    font-size:20px;
+    font-weight:600;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color:#1b96c8;
+}
+
+ .now-cont{
+    display:block;
+    justify-content: space-between;
+    text-align: left;
+    color:#1b96c8;
+    font-size:16px;
+    width:50%;
+    position:fixed;
+    left:0;
+ }
+
+.soon-cont{
+    display:block;
+    justify-content: space-between;
+    text-align: left;
+    color:#1b96c8;
+    font-size:16px;
+    width:50%;
+    position:fixed;
+    right:0;
+}
+
+.cont-lk{
+    font-size:20px;
+    font-weight:700;
+    color:#1b96c8;
+    text-decoration: underline;
+    transition-duration: color 0.3s;
+}
+
+.cont-lk:hover{
+    color:#1b97c88c;
+}
