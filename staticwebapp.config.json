@@ -1,6 +1,9 @@
 {
   "trailingSlash": "auto",
   "routes": [
+    {"route":"/",
+      "allowedRoles": ["authenticated"]
+    },
     {
       "route": "index.html*",
       "allowedRoles": ["authenticated"]
@@ -27,7 +30,7 @@
       "rewrite": "Not-Invited.html"
     },
     "401": {
-        "rewrite": "Not-For-You.html"
+        "redirect": "/.auth/login/aad"
     },
     "403": {
       "rewrite": "Not-For-You.html"
