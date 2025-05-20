@@ -9,6 +9,8 @@ html,body{
     font-family:'Montserrat', sans serrif;
     background-color: #f5f8fa;
     color:#1b96c8;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .header{
@@ -28,7 +30,7 @@ html,body{
 .title{
     font-size:5vh;
     font-weight:600;
-    position:fixed;
+    position:absolute;
     left:42.5%;
 }
 
@@ -54,6 +56,10 @@ html,body{
 
 .nav a:hover{
     color:#1b97c88c;
+}
+
+.main{
+    align-items: center;
 }
 
 .decal img{
@@ -139,4 +145,32 @@ html,body{
 
 .cont-lk:hover{
     color:#1b97c88c;
+}
+
+.Hey-You{
+    font-size:40px;
+    color:#1b96c8;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.Not-Allowed{
+    font-size:25px;
+    font-weight:550;
+    text-align: center;
+    text-decoration: none;
+}
+
+.criminal{
+    width:60%;
+    height:auto;
+    position:absolute;
+    left:10%;
+}
+
+.cop{
+    width:60%;
+    height:auto;
+    position:absolute;
+    left:70%
 }
