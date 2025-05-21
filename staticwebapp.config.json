@@ -22,7 +22,7 @@
     }
   ],
   "navigationFallback": {
-    "rewrite": "index.html",
+    "rewrite": "Index.html",
     "exclude": ["/Assets/*.{png,jpg,gif}", "/css/*"]
   },
   "responseOverrides": {
