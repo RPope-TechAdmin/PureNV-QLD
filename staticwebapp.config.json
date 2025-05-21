@@ -36,7 +36,7 @@
       "rewrite": "Not-For-You.html"
     },
     "404": {
-      "rewrite": "Not-For-You.html"
+      "rewrite": "Not-Found.html"
     }
   },
   "globalHeaders": {
