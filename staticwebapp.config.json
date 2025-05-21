@@ -30,7 +30,7 @@
       "rewrite": "Not-Invited.html"
     },
     "401": {
-        "redirect": "Index.html"
+        "redirect": "Not-For-You.html"
     },
     "403": {
       "rewrite": "Not-For-You.html"
