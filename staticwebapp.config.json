@@ -30,7 +30,8 @@
       "rewrite": "Not-Invited.html"
     },
     "401": {
-        "redirect": "Not-For-You.html"
+      "statusCode": 302,
+        "redirect": "/.auth/login/aad"
     },
     "403": {
       "rewrite": "Not-For-You.html"
