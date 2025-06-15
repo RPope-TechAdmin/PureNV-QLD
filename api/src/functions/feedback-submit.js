@@ -33,8 +33,3 @@ document.getElementById("feedbackForm").addEventListener("submit", function(even
 
 module.exports = { insertFeedback };
 });
-
-
-
-
-
