@@ -36,8 +36,47 @@
                     <input type="text" id="name" name="name" class="name-box" required>
                     <label for="feedback" class="feedback-label">Your Feedback:</label>
                     <textarea id="feedback" name="feedback" class="feedback-box" required></textarea>
-                <button id="submit "type="submit" class="submit-button">Submit</button>
+                <button id="submit "type="submit" class="submit-button" onclick="feedbackSubmit()">Submit</button>
+                <p id="p01"></p>
             </form>
+            <script>
+                function feedbackSubmit() {
+                    const message=document.getElementById("p01");
+                    message.innerHTML = "";
+                    const sql = require("mssql");
+                    const formData = {
+                        name: document.getElementById("name").value,
+                        feedback: document.getElementById("feedback").value
+                    };
+                    
+                    const config = {
+                    user: "rpope@purenv.au",
+                    password: "Red-R0ck6341",
+                    server: "purenvqld.database.windows.net:1433",
+                    database: "Feedback",
+                    options: {
+                        encrypt: true, // Required for Azure SQL
+                        trustServerCertificate: false
+                    }};
+
+                    async function insertFeedback(name, feedback) {
+                    try {
+                        let pool = await sql.connect(config);
+                        let result = await pool.request()
+                            .input("Name", sql.VarChar, name)
+                            .input("Feedback", sql.Text, feedback)
+                            .query("INSERT INTO feedback (Name, Feedback) VALUES (@name, @feedback)");
+
+                        console.log("Feedback submitted successfully!");
+                    } catch (err) {
+                        console.error("Error submitting feedback:", err);
+                    } finally {
+                        document.getElementById("name").value="",
+                        document.getElementById("feedback").value="";
+                    }
+                }
+                }
+            </script>
             <div id="responseMessage" class="feedback-resp"></div>
             <footer class="footer">
             <p class="footertext">Got a recommendation or a problem that needs solving? Contact us <a class="cont-lk" onclick="href='Contact.html'">here!</a></p>
